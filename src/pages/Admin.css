@@ -1,0 +1,64 @@
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 170px;
+    gap: 50px;
+
+    input {
+        width: 80%; /* Используйте процент для адаптивности */
+        max-width: 600px; /* Максимальная ширина */
+        height: 70px;
+        border-radius: 15px;
+        padding: 30px 0px 0 30px;
+        font-size: 25px;
+    }
+
+    button {
+        padding: 15px 50px;
+        font-size: 18px; /* Уменьшите размер шрифта для кнопки */
+    }
+}
+
+#admin {
+    width: 100%; /* Используйте 100% для адаптивности */
+    max-width: 1640px; /* Максимальная ширина */
+    height: auto; /* Высота автоматически подстраивается под содержимое */
+    opacity: 70%; 
+    background: url("https://s3-alpha-sig.figma.com/img/5323/fbb7/3e8624c87461a50468ec38a88885f388?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W9iLvZ4WHGQyVik-qsre~ZeWg14QWEYSARcDb9TYSVlZqw11KU0X1ahTBHDzASMJa29GH~wAI7h0DktaVxwW40vgBAnMerLdQOXbVSjSPDeEvMiTAss8zigJdLp5uKc7OPrpnUqjLk2gAF2uskmaCJoKZebN3wCiht1uAZWvPx1K5nXg9X8p2HIxLa40IXcEzRFOwa7oNSETSV58nJStjWeVlscmHZxGUitXy8S0R6rQwSuaReLSLLMNWDRYb3PdUbwaIcFEC0COpqNoApxJr9Zni2uY5Ankh01PQ8nOMrcOjGrc7Hqg8p7jpJefQ~J4JzcWjsHeGFO7rGYSjIs8EA__") no-repeat;
+}
+
+/* Медиазапросы для адаптации под меньшие экраны */
+@media (max-width: 768px) {
+    .inputs {
+        margin-top: 100px; /* Уменьшите отступ для мобильных устройств */
+        gap: 30px; /* Уменьшите расстояние между элементами */
+    }
+
+    input {
+        width: 90%; /* Увеличьте ширину для мобильных устройств */
+        font-size: 20px; /* Уменьшите размер шрифта для мобильных устройств */
+    }
+
+    button {
+        padding: 10px 30px; /* Уменьшите отступы для кнопки */
+        font-size: 16px; /* Уменьшите размер шрифта для кнопки */
+    }
+}
+
+@media (max-width: 480px) {
+    .inputs {
+        margin-top: 70px; /* Еще меньше отступ для очень маленьких экранов */
+        gap: 20px; /* Уменьшите расстояние между элементами */
+    }
+
+    input {
+        font-size: 18px; /* Уменьшите размер шрифта */
+    }
+
+    button {
+        padding: 8px 20px; /* Уменьшите отступы для кнопки */
+        font-size: 14px; /* Уменьшите размер шрифта для кнопки */
+    }
+}

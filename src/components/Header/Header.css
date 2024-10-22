@@ -1,0 +1,109 @@
+#header{
+background: url('https://s3-alpha-sig.figma.com/img/74f7/596f/e5cb7e45ce828bb3738bb445b7fb139b?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RrvdHllBgpivsKs~RozJe2VYB3dHZtz0Y-FdxiI4vN93X5mqPFhz35rhCTRBm1Cf8w8kC-92WZHYcN0dCeD-jW4kuoiYWrLGTvrccyHyvr8o-dfnpIBAelwS1R3cv4knafG8SvwywfHVHBR1QcN8kYz1d~oTRbTB0YSXDQzyryWDwjhfVDz75YNYPFnD2Yg2etoau4kzfgVw39mqH4MzqZKLhsgT4Z9gjHxKElG6zYvK9QrlndNU2~e1Fg7M5xbRBMbFqdUUh3DTOIcW9vnlO6uCpPIJ7lHp-ElIwkkeP4jeDI9XjRJRz0h0wgWswUEc9162RF4Tha31A~AWKShveA__')center ;
+background-size:cover; 
+width:  1550px ;
+height: 250px;
+
+
+} 
+.header{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menu{
+    display: none;
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 40px;
+}
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: -55px;
+    .numberH3{
+        color:rgba(255, 255, 255, 1);
+        font-size: 16px;
+
+    }
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    h3{
+        color:rgba(255, 255, 255, 1);
+    }
+}
+
+
+nav a{
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+}
+nav .basket{
+    font-size: 20px;
+}
+nav a:focus{
+    color: red;
+    transition: 0.5s;
+}
+.text{
+
+    h1{
+        color: aliceblue;
+    }
+}
+
+
+@media(max-width:1020px){
+  .logo{
+  display: none;
+      }
+    nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        
+    }
+   
+
+.mobile-menu {
+    margin-top: 10px;
+    position: fixed;
+    top: 60px; 
+    left: 10px; 
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    z-index: 9;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px; /* Пробел между элементами меню */
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    padding: 8px 12px;
+    display: block; /* Чтобы весь элемент был кликабельным */
+}
+
+.mobile-menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Эффект при наведении */
+}
+
+}

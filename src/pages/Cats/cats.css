@@ -1,0 +1,17 @@
+.cats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 30px;
+}
+.box .btn-1{
+    width: 380px;
+    height: 65px;
+    border-radius: 0px 0 10px 10px;
+    background: rgba(110, 187, 211, 1);
+    font-size: 25px;
+}
+.text-btn .text{
+    margin-left: -40px;
+}
